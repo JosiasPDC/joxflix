@@ -41,7 +41,7 @@ function App() {
       <Footer />
 {/* 
       <h1>Hello World JoxFlix </h1> <br />
-      Update automágico(HOt Reload)  <br /> 
+      Update automágico(HOt Reload)  <br />  
       JSX - [J]ava [S]Script [X]ml <br /> */}
     </div>
   );
