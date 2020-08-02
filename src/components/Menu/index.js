@@ -1,15 +1,24 @@
 import React from 'react';
+
 import Logo from '../../assets/img/JoxFlix.png';
 import './Menu.css';
+import{
+  Link
+} from 'react-router-dom';
+
+//Depois de fazer o import do styled-component
 import Button from '../Button/index';
+
+//Antes de fazer o import do styled-component
 //import ButtonLink from './ButtonLink/index';
+
 function Menu() {
     return (
         <nav className="Menu">
-            <a href="/">
+            <Link href="/">
                 <img src={Logo} className="Logo" alt="JoxMiroFlix" />
-            </a>
-            <Button as="a" className="ButtonLink" href="">
+            </Link>
+            <Button as={Link} className="ButtonLink" to="/cadastro/video">
                 Novo vídeo
             </Button>
             {/* <ButtonLink className="ButtonLink" href="/">

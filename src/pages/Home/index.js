@@ -1,14 +1,13 @@
 import React from 'react';
-import Menu from './components/Menu'
-import dadosIniciais from './data/dados_iniciais.json'
- import BannerMain from './components/BannerMain'
-import Carousel from './components/Carousel'
-import Footer from './components/Footer'
+import dadosIniciais from '../../data/dados_iniciais.json'
+import BannerMain from '../../components/BannerMain'
+import Carousel from '../../components/Carousel'
+import PageDefault from '../../components/PageDefault';
 
-function App() {
+function Home() {
   return (
     <div style={{ background : "#141414"}}>
-      <Menu />      
+      <PageDefault>
       <BannerMain 
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
@@ -37,8 +36,8 @@ function App() {
       <Carousel 
         ignoreFirstVideo
         category={dadosIniciais.categorias[5]}/>
+      </PageDefault>
       
-      <Footer />
 {/* 
       <h1>Hello World JoxFlix </h1> <br />
       Update automágico(HOt Reload)  <br />  
@@ -47,4 +46,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
